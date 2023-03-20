@@ -1,1 +1,44 @@
-remote_theme: pages-themes/leap-day@v0.2.0
+# Site settings
+title: "The HustleGPT Challenge"
+description: "The HustleGPT Challenge v/BotStuff"
+theme: jekyll-theme-minimal
+url: https://ssmanji89.github.io
+baseurl: /The-HustleGPT-Challenge
+
+# GitHub Pages settings
+markdown: kramdown
+exclude: [README.md]
+
+# Navigation menu
+nav:
+  - name: Home
+    url: /
+  - name: Documentation
+    url: /documentation
+  - name: Reference
+    url: /reference
+  - name: Community
+    url: /community
+
+# Jekyll settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Amazon Associates URL forwarding
+amazon:
+  tag: YOUR_AMAZON_ASSOCIATES_TAG
+  locale: US
+
+# View Counter
+gems:
+  - jekyll-page-view-count
+
+# Customize the footer
+footer:
+  text: |
+    Copyright © {{ site.time | date: '%Y' }} Your Name
+    Powered by <a href="https://pages.github.com/">GitHub Pages</a>.
